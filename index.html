@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBMC Entrep Fair Group 1 - Coffee Shop</title>
+    <!-- PyScript release CSS and JS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="overlay-card">
+        <h2>OBMC Entrep Fair Group 1 - Coffee Shop</h2>
+
+        <!-- Item Selection Checkboxes -->
+        <div class="menu-container">
+            <label><input type="checkbox" id="item1" value="150"> Americano (₱150)</label>
+            <label><input type="checkbox" id="item2" value="160"> Spanish Latte (₱160)</label>
+            <label><input type="checkbox" id="item3" value="180"> Cold Brew Malt (₱180)</label>
+            <label><input type="checkbox" id="item4" value="168"> Affogato (₱168)</label>
+            <label><input type="checkbox" id="item5" value="170"> Caramel Macchiato (₱170)</label>
+        </div>
+
+        <!-- Action Button -->
+        <button type="submit" py-click="generate_order">Create order</button>
+
+        <!-- Receipt Section -->
+        <div class="receipt-section">
+            <h3>Receipt....</h3>
+            <div id="output1">
+                <p>Subtotal: </p>
+                <p>Tax: </p>
+                <p><u>Sum/Total:</u> </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Tagline -->
+    <footer>
+        Jude T. Yunus | 10-Sapphire ©2026
+    </footer>
+
+    <!-- PyScript execution link -->
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>
